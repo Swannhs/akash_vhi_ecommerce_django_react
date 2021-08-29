@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -12,15 +13,22 @@ const Header = () => {
                     </div>
                     <nav>
                         <ul id="Menuitems">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Product</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="Account.html">Account</a></li>
+                            <li>
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/product">Product</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">About</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact">Contact</Link>
+                            </li>
                         </ul>
                     </nav>
-                    <a href="Add to cart.html"><img src='/images/cart.png' width="30px" height="30px"/></a>
-                    <img src="images/menu.png" className="menu_icon" onClick="menutoggle()"/>
+                    <Link href="#"><img src='/images/cart.png' width="30px" height="30px"/></Link>
+                    <img src="images/menu.png" className="menu_icon"/>
                 </div>
             </div>
         </div>
